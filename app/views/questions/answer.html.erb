@@ -1,4 +1,8 @@
 <h1>Answer Page</h1>
 <p> This is your answer to your question</p>
 
-<%= link_to "Ask again", ask_path %>
+<% @question %>
+<p>- You</p>
+<%= @answer %>
+<p>- Coach </p>
+<%= link_to "Ask a New Question", ask_path %>
